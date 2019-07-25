@@ -8,4 +8,5 @@ import javax.validation.constraints.NotNull;
 public class LinkPreviewRequestDTO {
     @NotNull
     private String link;
+    private boolean isTwitter;
 }

@@ -16,6 +16,6 @@ public class LinkPreviewResource {
 
     @PostMapping("/link-preview")
     public LinkPreviewDTO retrieveLinkPreview(@RequestBody LinkPreviewRequestDTO request) {
-        return linkPreviewService.getLinkPreview(request.getLink());
+        return linkPreviewService.getLinkPreview(request.getLink(), request.isTwitter());
     }
 }
